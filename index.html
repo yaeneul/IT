@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>미래공학반</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header class="topbar">
+  <div class="ruler"></div>
+  <div class="nav-inner">
+    <div class="brand" onclick="location.hash='#/home'">
+      <div class="brand-badge"><span>FE</span></div>
+      <div class="brand-name display">미래공학반</div>
+    </div>
+
+    <nav class="tabs" id="navTabs">
+      <a data-route="home" onclick="return goTo(event,'#/home')">홈</a>
+      <a data-route="intro" onclick="return goTo(event,'#/intro')">학급 소개</a>
+      <a data-route="notices" onclick="return goTo(event,'#/notices')">공지사항</a>
+      <a data-route="board" onclick="return goTo(event,'#/board')">학급 게시판</a>
+      <a data-route="members" onclick="return goTo(event,'#/members')">구성원 소개</a>
+    </nav>
+
+    <div class="auth-widget" id="authWidget"></div>
+  </div>
+</header>
+
+<div id="authModalRoot"></div>
+
+<main id="app"></main>
+
+<footer>
+  <div class="titleblock">
+    <div class="tb-cell">
+      <div class="tb-label">DRAWING TITLE</div>
+      <div class="tb-value">미래공학반 학급 홈페이지</div>
+    </div>
+
+    <div class="tb-cell">
+      <div class="tb-label">DRAWN BY</div>
+      <div class="tb-value">미래공학반 전체</div>
+    </div>
+
+    <div class="tb-cell">
+      <div class="tb-label">SCALE</div>
+      <div class="tb-value mono">1 : 1</div>
+    </div>
+
+    <div class="tb-cell">
+      <div class="tb-label">REV.</div>
+      <div class="tb-value mono">2026</div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
